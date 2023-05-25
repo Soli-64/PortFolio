@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+    background-color: #1b1b1b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    padding: 0px 0px 25% 0px;
+}
+
+a {
+    padding: 3vh 5vw 3vh 5vw;
+    color: #fff;
+}

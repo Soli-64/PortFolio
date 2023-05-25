@@ -1,12 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>PortFolio - Louis SOCHON</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    
+      <header class="top-barre">
+        <nav class="top-barre-nav">
+          <!-- <a class="top-barre-nav-element" href="#intro">Intro</a> -->
+          <a class="top-barre-nav-element" href="#realisations">Mes Réalisation</a>
+          <a class="top-barre-nav-element" href="#skills">Mes Skills</a>
+          <a class="top-barre-nav-element" href="">Me Contacter</a>
+        </nav>
+      </header>
+      <main class="main">
+        <section id="intro" class="main-intro">
+          <h1 class="main-intro-title">Salut !</h1>
+          <h2 class="main-intro-subtitle">Je suis Louis Sochon, développeur débutant.</h2>
+        </section>
+        <div class="hr2"></div>
+        <section id="realisations" class="main-projects">
+          <h1 class="main-projects-title">Mes Réalisations: </h1>
+          <article id="jeu-des-batonnets" class="main-projects-element flex-row">
+            <img class="main-projects-element-image" src="/public/image/images-projects/sticks-game.png" alt="">
+            <p class="main-projects-element-description">
+              <span class="main-projects-element-description-title">Le Jeu des Batonnets</span>
+              est une de mes premières réalisations. C'est une version numérique du jeu des batonnets 
+              classique, tout en JavaScript Vanilla.
+            </p>
+            <div class="main-projects-element-techs">
+              <div class="main-projects-element-techs-logos">
+                <img class="main-projects-element-techs-logos-element" src="/public/image/logos/html5.png" alt="logo HTML5">
+                <img class="main-projects-element-techs-logos-element" src="/public/image/logos/sass.png" alt="logo SASS">
+                <img class="main-projects-element-techs-logos-element" src="/public/image/logos/js.png" alt="logo JS">
+              </div>
+              <a target="_blank" href="https://github.com/Soli-64/Jeu-Des-Batonnets"><img class="main-projects-element-techs-logos-element flex-bottom" src="/public/image/logos/code.png" alt="lien vers le code"></a>
+            </div>
+          </article>
+        </section>
+        <div class="hr2"></div>
+        <section id="skills" class="main-skills">
+          <h1 class="main-skills-title">Mes Skills:</h1>
+          <h2 class="main-skills-subtitle">Les languages que je maitrise: </h2>
+          <div class="main-skills-div">
+            <p class="main-skills-div-indice">Très bien: </p>
+            <div class="main-skills-div-logos main-skills-div-logos-tier1">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/html5.png" alt="">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/css-3.png" alt="">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/js.png" alt="">
+            </div>
+          </div>
+          <div class="main-skills-div">
+            <p class="main-skills-div-indice">Bien: </p>
+            <div class="main-skills-div-logos main-skills-div-logos-tier2">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/python.png" alt="">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/sass.png" alt="">
+            </div>
+          </div>
+          <div tier class="main-skills-div">
+            <p class="main-skills-div-indice">En apprentissage: </p>
+            <div class="main-skills-div-logos main-skills-div-logos-tier3">
+              <img class="main-skills-div-logos-element" src="/public/image/logos/nodeJs.png" alt="">
+
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-credits">
+          <a class="footer-credits-element" target="_blank" href="./src/html/credits.html">Crédits Images</a>
+          <a class="footer-credits-element" href="https://github.com/Soli-64">Mon Github<!--<img class="footer-credits-image" src="/public/image/logos/github.png" alt="">--></a>
+        </div>
+      </footer>
   </body>
 </html>

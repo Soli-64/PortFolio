@@ -1,0 +1,5 @@
+<a href="https://www.flaticon.com/fr/icones-gratuites/html5" title="html5 icônes">Html5 icônes créées par Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/fr/icones-gratuites/css" title="css icônes">Css icônes créées par Pixel perfect - Flaticon</a>
+<a href="https://www.flaticon.com/fr/icones-gratuites/javascript" title="javascript icônes">Javascript icônes créées par Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/fr/icones-gratuites/python" title="python icônes">Python icônes créées par Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/fr/icones-gratuites/code" title="code icônes">Code icônes créées par Freepik - Flaticon</a>

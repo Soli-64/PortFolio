@@ -1,0 +1,403 @@
+@import './reset.css';
+
+@mixin backgound-skills($color, $size) {
+    background: $color;
+    background-size: $size;
+    background-repeat: no-repeat;
+}
+
+.top-barre {
+    height: 15vh;
+    width: 100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 15vh;
+        font-size: 2em;
+        &-element {
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Prosto One', cursive;
+        }
+    }
+
+}
+
+.main {
+    margin-top: 15vh;
+    width: 100%;
+    background-color: #1b1b1b; //background: linear-gradient(red, blue);
+    color: #fff;
+    &-intro {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 10vh;
+        &-title {
+            width: 100%;
+            font-size: 5em;
+            padding-left: 5vw;
+            margin-top: 10vh;
+            font-family: 'Prosto One', cursive;
+            background: linear-gradient(to right, red, blue);
+            background-size: 0%;
+            background-repeat: no-repeat;
+            transition: background-size 1s ease-in-out;
+            &:hover {
+                transition: background-size 1s ease-in-out;
+                background-size: 50%;
+            }
+        }
+        &-subtitle {
+            padding-top: 5vh;
+            padding-left: 5vw;
+            padding-bottom: 5vh;
+            width: 90%;
+            font-size: 2.5em;
+            font-family: 'Prosto One', cursive;
+            background: linear-gradient(to right, rgb(72, 72, 245), rgb(26, 248, 26));
+            background-size: 0%;
+            background-repeat: no-repeat;
+            transition: background-size 1.5s ease-in-out;
+            &:hover {
+                transition: background-size 1s ease-in-out;
+                background-size: 90%;
+            }
+        }
+        &-infos {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            align-items: center;
+            background-color: #270138;
+            &-element {
+                font-size: 2em;
+                padding-left: 5vw;
+            }
+        }
+    }
+    &-projects {
+        background: linear-gradient(blue, );
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        &-title {
+            padding-top: 10vh;
+            padding-left: 5vw;
+            font-size: 3em;
+            text-decoration: underline;
+            font-family: 'Prosto One', cursive;
+        }
+        &-element {
+            padding-top: 5vh;
+            padding-left: 8vw;
+            padding-bottom: 5vh;
+            display: flex;
+            width: 80vw;
+            height: auto;
+            //background-color: #1a1a1a;
+            &-image {
+                background-color: #270138;
+                padding: 2vh 1vw 2vh 1vw;
+                margin-right: 2vw;
+                width: 38vw;
+                height: auto;
+                border: 2px solid #fff;
+                border-radius: 20px;
+            }
+            &-description {
+                width: 34vw;
+                height: 30vh;
+                font-size: 1.7em;
+                &-title {
+                    font-size: 1.8em;
+                }   
+            }
+            &-techs {
+                &-logos {
+                    position: relative;
+                    width: 4vw;
+                    height: 30vh;
+                    &-element {
+                        padding-top: 1vw;
+                        padding-left: 1vw;
+                        width: 2vw;
+                        height: auto;
+                    }
+                }
+
+            }
+        }
+    }
+    &-skills {
+        width: 100%;
+        padding-top: 5vh;
+        &-title {
+            font-size: 3em;
+            padding-left: 5vw;
+            text-decoration: underline;
+            padding-bottom: 5vh;
+        }
+        &-subtitle {
+            font-size: 2.4em;
+            padding-left: 10vw;
+        }
+        &-div {
+            width: 100%;
+            height: 10vh;
+            padding: 6vh 0vw 6vh 0vw;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            &-indice {
+                padding-left: 5vw;
+                font-size: 1.8em;
+            }
+            &-logos {
+                &-tier1 {
+                    @include backgound-skills(linear-gradient(to right, rgb(184, 233, 192), rgb(11, 124, 77)), 2%)
+                }
+                &-tier2 {
+                    @include backgound-skills(linear-gradient(to right, rgb(97, 213, 241), rgb(6, 20, 207)), 2%)
+                }
+                &-tier3 {
+                    @include backgound-skills(linear-gradient(to right, rgb(150, 112, 112), rgb(146, 38, 38)), 2%)
+                }
+                margin-right: 2vw;
+                width: 70%;
+                height: 14vh;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                transition: background-size, 2s;
+                &:hover {
+                    transition: background-size, 2s;
+                    background-size: 100%;
+                    * {
+                        transition: opacity 1s;
+                        opacity: 100%;
+                    }
+                }
+                &-element {
+                    width: 8vw;
+                    position: relative;
+                    top: -2vh;
+                    transition: opacity 1s;
+                    opacity: 1%;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #000000;
+    &-credits {
+        display: flex;
+        flex-direction: row;
+        align-items: left;
+        flex-wrap: wrap;
+        &-element {
+            padding: 5vh 1vw 1vh 6vw;
+            color: #fff;
+            font-size: 1em;
+        }
+        &-image {
+            position: relative;
+            bottom: -1vh;
+            width: 3vw;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main {
+        &-skills {
+            &-div {
+                flex-direction: column;
+                height: 25vh;
+                &-logos {
+                    &-element {
+                        width: 9vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .top-barre-nav {
+        padding-left: 3vw;
+        width: 100%;
+        &-element {
+            padding: 5px 0px 5px 0px;
+            font-size: 0.7em;
+        }
+    }
+    .main {
+        &-intro {
+            &-title {
+                &:hover {
+                    background-size: 85%;
+                }
+            }
+            &-subtitle {
+                &:hover {
+                    background-size: 99%;
+                }
+            }
+        }
+        &-projects {
+            width: 100vw;
+            padding: 0px;
+            &-element {
+                flex-wrap: wrap;
+                padding: 5vh 0vw 5vh 0vw;
+                margin: 0px;
+                width: 100%;
+                height: auto;
+                &-image {
+                    width: 100%;
+                    padding: 5vh 0px 5vh 0px;
+                    border-radius: 0px;
+                    margin-bottom: 2vh;
+                    border-left: none;
+                    border-right: none;
+                }
+                &-description {
+                    padding-left: 8vw;
+                    font-size: 1.6em;
+                    width: 70vw;
+                    height: auto;
+                    &-title {
+                        font-size: 1.6em;
+                    }
+                }
+                &-techs {
+                    &-logos {
+                        position: relative;
+                        width: 8vw;
+                        height: 30vh;
+                        &-element {
+                            padding-top: 1vw;
+                            padding-left: 1vw;
+                            width: 6vw;
+                            height: auto;
+                        }
+                    }
+    
+                }
+            }
+        }
+        &-skills {
+            &-title {
+                font-size: 2em;
+            }
+            &-div {
+                &-logos {
+                    &-element {
+                        width: 10vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .main {
+        &-skills {
+            &-div {
+                flex-direction: column;
+                height: 25vh;
+                &-logos {
+                    &-element {
+                        width: 12vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .top-barre-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        padding-left: 3vw;
+        font-size: 1.5em;
+        width: 90%;
+        height: 15vh;
+        position: fixed;
+        &-element {
+            padding: 2vh 5vw 5px 5vw;
+        }
+    }
+    .main {
+        &-skills {
+            &-div {
+                flex-direction: column;
+                height: 25vh;
+                &-logos {
+                    &-element {
+                        width: 14vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .main {
+        &-skills {
+            &-div {
+                flex-direction: column;
+                height: 25vh;
+                &-logos {
+                    @include backgound-skills(linear-gradient(to right, rgb(97, 213, 241), rgb(6, 20, 207)), 100%);
+                    &-element {
+                        opacity: 100%;
+                        width: 24vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.flex-row {
+    flex-direction: row;
+}
+.flex-reverse {
+    flex-direction: row-reverse;
+}
+
+.hr2 {
+    width: 100%;
+    height: 2vh;
+    margin: 5vh 0vw 5vh 0vw;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    background: linear-gradient(to right, red, blue);
+}
+
+body {
+    font-family: 'Prosto One', cursive;
+}
